@@ -1,0 +1,129 @@
+@import url(fonts.css);
+
+.main {
+    background: rgb(57, 54, 54);
+}
+
+.burger-list {
+    color: white;
+    font-family: "RWT";
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: rgb(41, 41, 41);
+    min-height: 65px;
+    padding: 15px;
+}
+
+.burger-list__link {
+    color: white;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.burger-list__link:hover {
+    color: rgb(105, 207, 23);
+}
+
+.burger-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px 15px;
+}
+
+.burger-box__item {
+    border: 1px solid white;
+    border-radius: 4px;
+    background: rgb(12, 12, 12);
+    overflow: hidden;
+}
+
+.burger-item__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.burger-item__nik {
+    color: white;
+    font-family: "RWR";
+    font-size: 19px;
+    line-height: 24px;
+    margin: 15px;
+}
+
+.burger-item__text {
+    color: white;
+    font-family: "RWT";
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 15px 20px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .burger-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .burger-item__image {
+        height: 230px;
+    }
+}
+
+/* ================= TELEFON ================= */
+
+@media (max-width: 600px) {
+
+    .burger-list {
+        gap: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .burger-box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .burger-item__image {
+        height: 250px;
+    }
+
+    .burger-item__nik {
+        font-size: 18px;
+    }
+
+    .burger-item__text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+/* ================= KICHIK TELEFON ================= */
+
+@media (max-width: 400px) {
+
+    .burger-list {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .burger-box {
+        padding: 15px 10px;
+    }
+
+    .burger-item__image {
+        height: 210px;
+    }
+}
